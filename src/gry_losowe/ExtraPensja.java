@@ -1,4 +1,4 @@
-package com.company;
+package gry_losowe;
 
 import java.util.Random;
 
