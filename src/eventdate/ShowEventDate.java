@@ -1,4 +1,4 @@
-package com.company;
+package eventdate;
 
 public class ShowEventDate {
     public static void main(String[] args) {

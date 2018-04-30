@@ -1,4 +1,4 @@
-package com.company;
+package eventdate;
 
 import java.util.Scanner;
 import java.util.Date;
