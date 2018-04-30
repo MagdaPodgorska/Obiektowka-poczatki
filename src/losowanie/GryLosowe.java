@@ -1,4 +1,4 @@
-package gry_losowe;
+package losowanie;
 
 import static java.lang.Thread.sleep;
 

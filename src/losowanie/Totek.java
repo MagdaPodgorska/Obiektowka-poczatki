@@ -1,4 +1,4 @@
-package gry_losowe;
+package losowanie;
 
 import java.util.Random;
 
