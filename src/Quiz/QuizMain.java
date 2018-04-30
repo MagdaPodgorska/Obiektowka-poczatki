@@ -1,8 +1,9 @@
-package com.company;
+package Quiz;
+
 
 import static java.lang.Thread.sleep;
 
-public class Quiz1 {
+public class QuizMain {
     public static void main(String[] args) throws InterruptedException {
 
         Quiz powitanie = new Quiz();

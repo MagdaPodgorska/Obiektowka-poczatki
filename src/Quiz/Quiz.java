@@ -1,4 +1,4 @@
-package com.company;
+package Quiz;
 
 import java.util.Scanner;
 
@@ -23,7 +23,6 @@ void powitanie()
     {
         while(odpowiedz!=1&odpowiedz!=2)
             {
-
                 System.out.print("Podaj  odpowiedz: ");
                 Scanner scanner = new Scanner(System.in);
                 odpowiedz = Integer.valueOf(scanner.nextLine());
