@@ -1,4 +1,4 @@
-package com.company;
+package Velocity;
 
 public class Fast { public static void main(String[] args) {
 

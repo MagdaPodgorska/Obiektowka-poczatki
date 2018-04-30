@@ -1,4 +1,4 @@
-package com.company;
+package Velocity;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package com.company;
+package Velocity;
 
 public class Predkosc {
     Zawodnik uczestnik;
