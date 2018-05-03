@@ -1,4 +1,4 @@
-package new_kalkulator;
+package nowy_kalkulator;
 
 import static java.lang.Thread.sleep;
 
