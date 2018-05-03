@@ -1,33 +1,20 @@
-package losowanie;
+package gry_losowe;
 
 import java.util.Random;
 
 import static java.lang.Thread.sleep;
 
-public class Totek {
-
-    int tab[]=new int[6];
-
-    void wstep()
-    {
+public class Totek
+ {
+     private int tab[]=new int[6];
+    Totek () throws InterruptedException {
         System.out.println(" DUŻY LOTEK. Losowanie sześciu liczb z zakresu 1-49");
 
-    }
-
-    Random generator = new Random();
-
-    void losuj() {
-
+        Random generator = new Random();
         for (int i = 0; i < 6; i++)
         {
-
-            tab[i] = (generator.nextInt(49))+1;
-
+            tab[i] = (generator.nextInt(49)) + 1;
         }
-    }
-
-    void sort()
-    {
         for (int i=0; i<6;i++)
         {
             for (int j=5;j>=1;j--)
@@ -41,18 +28,24 @@ public class Totek {
 
             }
         }
-    }
-
-    void wypisz () throws InterruptedException {
         for (int i = 0; i < 6; i++)
         {
-sleep(1000);
+            sleep(1000);
             System.out.print(" " + tab[i]);
 
 
         }
+
+        sleep(1000);
     }
-}
+    }
+
+
+
+
+
+
+
 
 
 
