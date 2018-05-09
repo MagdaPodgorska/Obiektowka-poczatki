@@ -2,50 +2,48 @@ package Quiz;
 
 import java.util.Scanner;
 
+import static java.lang.Thread.sleep;
+
 public class Quiz {
-    String tresc;
-    int odpowiedz;
-    int poprawna_odpowiedz;
+
+   private int odpowiedz;
+    private int poprawna_odpowiedz;
+    private String tresc;
 
 
-void powitanie()
-{
-    System.out.println("QUIZ FIZYKA - CIEKAWOSTKI");
-    System.out.println("Witaj, do każdego pytania jest możliwa jedna poprawna odpowiedź. Powodzenia.");
-}
-
-    void tresc()
-    {
-        System.out.println(tresc);
+    public Quiz () throws InterruptedException {
+        System.out.println("QUIZ FIZYKA CIEKAWOSTKI");
+        System.out.println("Do każdego pytania możliwa jest tylko jedna poprawna odpowiedz.");
+        sleep(2000);
     }
 
-    void wybor()
-    {
+   public Quiz ( String tresc, int poprawna_odpowiedz) throws InterruptedException {
+            sleep(2000);
+            this.tresc=tresc;
+            System.out.println(tresc);
+            this.poprawna_odpowiedz=poprawna_odpowiedz;
         while(odpowiedz!=1&odpowiedz!=2)
-            {
-                System.out.print("Podaj  odpowiedz: ");
-                Scanner scanner = new Scanner(System.in);
-                odpowiedz = Integer.valueOf(scanner.nextLine());
-                if(odpowiedz!=1&odpowiedz!=2)
-                {
-                    System.out.println("Zly wybor, wpisz jeszcze raz");
-                }
-            }
-
-    }
-
-    void sprawdz()
-    {
-        if(odpowiedz==poprawna_odpowiedz)
         {
-            System.out.println("Poprawna odpowiedz, zdobywasz punkt :)");
-
+            System.out.print("Podaj  odpowiedz: ");
+            Scanner scanner = new Scanner(System.in);
+            odpowiedz = Integer.valueOf(scanner.nextLine());
+            if(odpowiedz!=1&odpowiedz!=2)
+            {
+                System.out.println("Zly wybor, wpisz jeszcze raz");
+            }
         }
-        else
-            System.out.println("Niepoprawna odpowiedz :( punktow nie zdobywasz");
+            if(odpowiedz==poprawna_odpowiedz)
+            {
+                System.out.println("Poprawna odpowiedz, zdobywasz punkt :)");
+
+            }
+            else
+                System.out.println("Niepoprawna odpowiedz :( punktow nie zdobywasz");
+
+
     }
 
-    int punkty()
+    public int punkty()
     {
         if(odpowiedz==poprawna_odpowiedz)
         {
@@ -56,6 +54,9 @@ void powitanie()
             return 0;
         }
     }
+
 }
+
+
 
 
